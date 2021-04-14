@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 
 /* let number = 5;
 const leftBorderWidth = 1;
@@ -135,3 +135,159 @@ personalMovieDB.movies[c] = d;
 
 //console.log(personalMovieDB);
 */
+
+//Условия
+
+/*if (4 == 9) {
+    console.log('Ok!');
+} else {
+    console.log('Error');
+}*/
+
+//const num = 50;
+
+/*if (num < 49) {
+    console.log('Error');
+} else if (num > 100) {
+    console.log('Много');
+} else {
+    console.log('Ok!');
+}*/
+
+//Тернарный оператор
+/*const num = 50;
+
+(num === 50) ? console.log('Ok!') : console.log('Error');*/
+
+//конструкция switch - это модификация if, кот. содержит неск. проверок и условий
+
+/*const num = 50; //swith проверяет на строгое соответсвие 
+
+switch (num) {
+    case 49: //если переменная будет равна 49, то в консоль выведем 'Неверно'
+        console.log('Неверно');
+        break; //break - после каждого действия, чтобы при успешной проверке скрипт завершился.
+    case 100:
+        console.log('Неверно')   
+        break; 
+    case 50:
+        console.log('Верно!')   
+        break;    
+    default: //действие по умолчанию, если ничего не подошло.
+    console.log('Не в этот раз')   
+    break; 
+}*/
+
+//Циклы
+
+//let num = 50;
+
+/*while (num <= 55) { //пока это усл. выполняется, мы будем елать какие-то действия
+    console.log(num);
+    num++;
+}*/
+
+/*do { //снача заставляем цикл что-то сделать, а потом уже проверить условие и если необх. выйти из цикла
+    console.log(num);
+    num++;
+}
+while (num < 55);*/
+
+/*for (let i = 1; i < 10; i++) { //создаем переменную,создаем условие,при кот.цикл ост.работу,создаем шаг цикла
+    if (i === 6) { //если переменная i будет равна 6, 
+        //break; //то цикл завершится
+        continue; //позволяет пропустить ненужный шаг (6) и не прерывает полностью цикл
+    }
+    console.log(i);
+}*/
+
+
+/*const a = prompt('Один из  последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из  последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', ''); 
+
+personalMovieDB.movies[a] = b;   
+personalMovieDB.movies[c] = d;       
+      //автоматизируем запись
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из  последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
+    
+    personalMovieDB.movies[a] = b;
+}    */  
+
+//Функции 
+
+/*let num = 20; //глобальная переменная
+
+function showFirstMessage(text) { //function declaration 
+    console.log(text);
+    console.log(num);
+}
+
+showFirstMessage('Hello Word!');
+console.log(num);
+
+/*function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(4, 3)); //7
+console.log(calc(5, 6)); //11
+console.log(calc(10, 6)); //16 */
+
+/*function ret() {
+    let num = 50; //локальная переменная
+    return num;
+}
+
+const anotherNum = ret();
+ console.log(anotherNum);
+
+
+const logger = function() { //function expression 
+    console.log('Hello');
+};
+
+logger();
+
+const calc = (a, b) => a + b; //стрелочная функция*/
+
+//Методы и св-ва строк и чисел
+
+/*const str = 'teSt';
+
+//console.log(str.[2]); //второй символ в str - s
+
+console.log(str.toUpperCase()); //верхний регистр
+console.log(str.toLowerCase()); //нижний регистр
+console.log(str);
+
+const fruit = 'Some fruit';
+
+console.log(fruit.indexOf('fruit'));*/ //c 5 cимвола начинается слово fruit
+
+//const logg = 'Hello world';
+
+/*console.log(logg.slice(6, 11)); //возвращаем из строки слово world (с 6 символа по 11)
+
+const her = 'I love you, my friend!'; //можно указать только начало для вырезания и строка обрежется до конца
+console.log(her.slice(12));
+
+const b = 'Text text text test text';
+console.log(b.slice(15, 19));
+
+console.log(logg.substring(6, 11));*/ //как и slice, но нельзя указывать отриц. знач
+
+//console.log(logg.substr(6, 5)); //второе значение (5) - это сколько нужно вырезать символов
+
+/*const num = 12.2;
+console.log(Math.round(num)); //округление до ближайшего целого (12)
+
+const test = '12.2px';
+//console.log(parseInt(test));//переводит число в др. систему исчесления, ост. только целое число (12)
+
+console.log(parseFloat(test));*/ //возвращает дробное число, как есть (12.2)
+
